@@ -1,0 +1,56 @@
+#first_visit_panel_container {
+	background-color: var(--background-second);
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#option_square {
+	padding: 1rem;
+	border-radius: 25px;
+	background-color: var(--first);
+	color: var(--second);
+}
+
+#first_visit_panel_header {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 5rem;
+	margin-bottom: 1rem;
+}
+
+#first_visit_panel_text {
+	text-align: center;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+
+.panel_entry {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 0.25rem;
+}
+
+#panel_button {
+	margin-top: 1rem;
+	font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+	#option_square {
+		margin: 1rem;
+	}
+	#first_visit_panel_header {
+		font-size: 2rem;
+	}
+	#first_visit_panel_text {
+		font-size: 1rem;
+	}
+}

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+
+#container {
+	height: 100vh;
+	width: 100vw;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+@media (max-width: 900px) {
+	#container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+}
+
+:root {
+	--temperature: #f8b62d;
+	--precipitation: #2ea7e0;
+	--background: rgba(29, 36, 43, 0.6);
+	--background-second: rgba(29, 36, 43, 0.9);
+	--background-third: rgba(246, 245, 245, 0.2);
+	--first: #fafafa;
+	--second: #1d242b;
+	--third: #0077c0;
+}
+
+/* CSS button */
+.button-4 {
+	appearance: none;
+	background-color: #fafbfc;
+	border: 1px solid rgba(27, 31, 35, 0.15);
+	border-radius: 15px;
+	box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+		rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+	box-sizing: border-box;
+	color: #24292e;
+	cursor: pointer;
+	display: inline-block;
+	/* font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; */
+	/* font-size: 14px; */
+	font-weight: 500;
+	/* line-height: 20px; */
+	list-style: none;
+	padding: 2px 16px;
+	position: relative;
+	transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+	white-space: nowrap;
+	word-wrap: break-word;
+}
+
+.button-4:hover {
+	background-color: #f3f4f6;
+	text-decoration: none;
+	transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+	background-color: #fafbfc;
+	border-color: rgba(27, 31, 35, 0.15);
+	color: #959da5;
+	cursor: default;
+}
+
+.button-4:active {
+	background-color: #edeff2;
+	box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+	transition: none 0s;
+}
+
+.button-4:focus {
+	outline: 1px transparent;
+}
+
+.button-4:before {
+	display: none;
+}
+
+.button-4:-webkit-details-marker {
+	display: none;
+}
+
+/* Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #383838; /* Darker thumb color */
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #111; /* Darker thumb color on hover */
+}
+
+::-webkit-scrollbar-track {
+	background-color: #e0e0e0;
+}
+
+* {
+	scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+	background-color: #e0e0e0;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #383838; /* Darker thumb color */
+	border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #111; /* Darker thumb color on hover */
+}

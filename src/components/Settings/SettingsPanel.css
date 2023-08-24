@@ -1,0 +1,66 @@
+#screen_container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: var(--background-second);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	z-index: 1000;
+}
+
+#settings_panel_container {
+	display: block;
+
+	z-index: 1100;
+
+	background-color: var(--first);
+	color: var(--second);
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+	padding: 2.5rem;
+	border-radius: 25px;
+}
+
+.settings_entry {
+	font-size: 1.25rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 1rem;
+	padding: 0.1rem;
+}
+
+#settings_container_text {
+	font-size: 3rem;
+	text-align: center;
+}
+
+#settings_button {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+	#settings_panel_container {
+		margin: 1rem;
+	}
+
+	.settings_entry {
+		gap: 0;
+	}
+}

@@ -1,0 +1,23 @@
+#geolocation_permission_container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+#text {
+	font-size: 3rem;
+}
+
+#reset_button {
+	margin-left: 1rem;
+}
+
+@media (max-width: 900px) {
+	#geolocation_permission_container {
+		text-align: center;
+	}
+}
