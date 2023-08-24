@@ -3,12 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://rudy282.github.io/weather-app-v2",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prod": "rm -rf dist && yarn vite build && yarn serve dist"
+    "prod": "rm -rf dist && yarn vite build && yarn serve dist",
+	"deploy": "gh-pages -d build"
   },
   "dependencies": {
     "antd": "^5.8.2",
