@@ -4,6 +4,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+	base: "/weather-app-v2/",
 	plugins: [
 		react(),
 		VitePWA({
@@ -11,7 +12,7 @@ export default defineConfig({
 				name: "weather-app",
 				short_name: "weather-app",
 				theme_color: "#000",
-				start_url: "/",
+				start_url: "/weather-app-v2/",
 				background_color: "#1d242b",
 				categories: ["weather"],
 				description:
