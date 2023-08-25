@@ -11,9 +11,9 @@ export default defineConfig({
 			manifest: {
 				name: "weather-app",
 				short_name: "weather-app",
-				theme_color: "#000",
+				theme_color: "#fafafa",
 				start_url: "/weather-app-v2/",
-				background_color: "#1d242b",
+				background_color: "#fafafa",
 				categories: ["weather"],
 				description:
 					"Weather-app, experience weather like never before, created for everyone from simple users to professionals.",
